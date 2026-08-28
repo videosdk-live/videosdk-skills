@@ -13,13 +13,10 @@ Same on both paths:
   said out loud. **A token signed with no permissions is not a
   restricted token** — the server SDK documents the default as the join
   *and* moderator permissions together, so the participant you meant to
-  limit arrives holding moderator rights and nothing looks wrong. Name
-  the permissions on every token you sign, including the ordinary ones.
-  Whether an *empty* list behaves like an omitted one, and whether the
-  same default applies to a hand-signed JWT as to the server SDK's
-  builder, are not documented either way — naming them explicitly is
-  what makes both questions moot, which is why it's the rule rather than
-  a preference.
+  limit arrives holding moderator rights and nothing looks wrong. Name the
+  permissions on every token you sign — the ordinary ones included, on a
+  hand-signed JWT exactly as on one built by a server SDK, and with real
+  values rather than an empty list.
 - A moderating host — the teacher, the doctor admitting patients, the
   seller running the stream — gets **both** the join and the moderator
   permission; the moderator permission alone will not admit them to the

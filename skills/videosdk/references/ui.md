@@ -217,12 +217,11 @@ the rest as a count. Past a few dozen tiles stop rendering everyone and
 read the scalability rule in `use-cases.md`.
 
 **Render the local participant yourself.** The SDK's participants
-collection holds everyone *except* the local one, so a grid built by
-iterating it alone shows the host an empty screen with no error. Add the
-local participant to the list you render — and don't be talked out of it
-by the reference page, which calls that collection "all the connected
-participants" while the SDK's own typings say "except local
-participant".
+collection holds the remote participants, so a grid built by iterating it
+alone shows the host an empty screen with no error. Add the local
+participant to the list you render. The SDK's own typings are the precise
+statement of what that collection contains, so check them there if you
+need to confirm it.
 
 ## On phones
 
