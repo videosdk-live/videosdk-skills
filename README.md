@@ -14,13 +14,14 @@ from the official documentation rather than from recall.
 npx skills add github:videosdk-live/videosdk-skills
 ```
 
-Restart your assistant, then ask:
+The installer asks which assistants to set up — tick the ones you use, then
+restart your assistant and ask:
 
 > add video calling to my app
 
-It asks a few short questions — your frontend, where auth tokens come from,
-which product, and what you're building — then scaffolds a working example with
-the features that use case actually needs.
+The skill asks a few short questions — your frontend, where auth tokens come
+from, which product, and what you're building — then scaffolds a working example
+with the features that use case actually needs.
 
 ## What this skill helps you build
 
@@ -57,21 +58,13 @@ works without it too — just more slowly.
 
 ## Installation
 
-**Skills CLI** — recommended
-
 ```bash
 npx skills add github:videosdk-live/videosdk-skills
 ```
 
-**Manually**, for Claude Code:
-
-```bash
-git clone https://github.com/videosdk-live/videosdk-skills.git
-ln -s "$PWD/videosdk-skills/skills/videosdk" ~/.claude/skills/videosdk
-```
-
-For any other assistant, copy `skills/videosdk/` into its skills directory — it's
-plain markdown, nothing to build.
+The installer asks which assistants to set up. **Tick Claude Code** if you use
+it, along with Antigravity, Cursor, Codex, or whatever else you work in — then
+restart that assistant so the skill loads.
 
 ## Requirements
 
