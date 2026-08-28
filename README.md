@@ -34,7 +34,10 @@ The skill helps your AI coding assistant build the right VideoSDK experience for
 
 For more accurate, version-aware answers, you can also connect the **VideoSDK Documentation MCP Server** to your AI coding assistant.
 
-[VideoSDK Documentation MCP Server](https://docs.videosdk.live/mcp)
+
+```bash
+https://docs.videosdk.live/mcp
+```
 
 Add it as a **streamable HTTP** MCP server in your assistant's MCP configuration and restart the assistant.
 
