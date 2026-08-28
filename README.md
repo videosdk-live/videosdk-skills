@@ -1,82 +1,54 @@
 # VideoSDK Skills
 
-The fastest way to build real-time video and live streaming into your app with
-an AI coding assistant.
+Build VideoSDK features with your AI coding assistant using official VideoSDK documentation and recommended implementation patterns.
 
-This is VideoSDK's official agent skill — a knowledge pack that teaches Claude
-Code, Antigravity, Cursor and other skill-capable assistants how to build on
-VideoSDK properly. Ask for a feature in your own words, and your assistant works
-from the official documentation rather than from recall.
+Describe what you want to build, and the skill helps your assistant implement it.
 
-## Quick start
+## Quick Start
+
+Install the VideoSDK skill:
 
 ```bash
 npx skills add github:videosdk-live/videosdk-skills
 ```
 
-The installer asks which assistants to set up — tick the ones you use, then
-restart your assistant and ask:
+During installation, select the AI coding assistants you want to use.
 
-> add video calling to my app
+Then restart your assistant and describe what you want to build:
 
-The skill asks a few short questions — your frontend, where auth tokens come
-from, which product, and what you're building — then scaffolds a working example
-with the features that use case actually needs.
+> Add video calling to my app
 
-## What this skill helps you build
+The skill helps your AI coding assistant build the right VideoSDK experience for your use case using the official documentation.
 
-A telehealth consultation with a waiting lobby. A KYC verification with document
-capture. A classroom with a whiteboard and teacher-only controls. A live shopping
-stream with polls and buyers brought on stage. A town hall broadcast to
-thousands.
+## What's Covered?
 
-Not a generic video demo — the example is shaped by what you said you're
-building.
+| Area                           | Capabilities                                                                                   | Platforms                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Audio & Video Calling**      | 1:1 and group calls, pre-call device checks, waiting lobby, screen sharing, chat, recording    | React, JavaScript, React Native, Flutter, Android, iOS |
+| **Interactive Live Streaming** | Host and audience roles, invite users on stage, polls, reactions, virtual gifts, live captions | React, JavaScript, React Native, Flutter, Android, iOS |
+| **HLS Broadcast**              | One-way streaming for large audiences, player setup, playback URL delivery                     | React, JavaScript, React Native, Flutter, Android, iOS |
+| **Authentication & Tokens**    | API key setup, backend token endpoints, dashboard tokens for getting started                   | Node.js, Python, Java, PHP, Go, Ruby, .NET, Rust       |
+| **Use-Case Solutions**         | KYC, telehealth, education, live commerce, events, and webinars                                | All supported platforms                                |
 
-## What's covered
+## Use the VideoSDK Docs MCP Server
 
-| Area | What you get | Platforms |
-|---|---|---|
-| **Audio-video calling** | 1:1 and group calls, precall device checks, waiting lobby, screen share, chat, recording | React, JavaScript, React Native, Flutter, Android, iOS |
-| **Interactive live streaming** | Host and audience roles, invite on stage, polls, reactions, virtual gifts, live captions | React, JavaScript, React Native, Flutter, Android, iOS |
-| **HLS broadcast** | One-way streaming to large audiences, player setup, playback URL delivery | React, JavaScript, React Native, Flutter, Android, iOS |
-| **Auth & tokens** | API key setup, a token endpoint on your own backend, or a dashboard token to start with | Node.js, Python, Java, PHP, Go, Ruby, .NET, Rust |
-| **Use-case feature sets** | KYC, telehealth, education, live commerce, events & webinars | all |
+For more accurate, version-aware answers, you can also connect the **VideoSDK Documentation MCP Server** to your AI coding assistant.
 
-## Connect the docs MCP server
+[VideoSDK Documentation MCP Server](https://docs.videosdk.live/mcp)
 
-VideoSDK publishes a documentation MCP server that returns answers matched to
-your SDK version, instead of pages your assistant has to version-check by hand:
-
-```
-https://docs.videosdk.live/mcp
-```
-
-Add it as a **streamable-http** server in your assistant's MCP configuration and
-restart. The skill offers to walk you through this the first time it runs, and
-works without it too — just more slowly.
-
-## Installation
-
-```bash
-npx skills add github:videosdk-live/videosdk-skills
-```
-
-The installer asks which assistants to set up. **Tick Claude Code** if you use
-it, along with Antigravity, Cursor, Codex, or whatever else you work in — then
-restart that assistant so the skill loads.
+Add it as a **streamable HTTP** MCP server in your assistant's MCP configuration and restart the assistant.
 
 ## Requirements
 
-A VideoSDK account for your API key and secret, from the
-[dashboard](https://app.videosdk.live). The skill tells you when it needs them
-and keeps building around a placeholder while you fetch them, so you get the app
-and the request together rather than a blocked session.
+You need a **VideoSDK account** to get your API key and secret.
+
+[VideoSDK Dashboard](https://app.videosdk.live)
 
 ## Links
 
-- [Documentation](https://docs.videosdk.live)
-- [Dashboard](https://app.videosdk.live)
+* [VideoSDK Documentation](https://docs.videosdk.live)
+* [VideoSDK Dashboard](https://app.videosdk.live)
+* [VideoSDK MCP Server](https://docs.videosdk.live/mcp)
 
 ## License
 
