@@ -9,7 +9,7 @@ Describe what you want to build, and the skill helps your assistant implement it
 Install the VideoSDK skill:
 
 ```bash
-npx skills add github:videosdk-live/videosdk-skills
+npx skills add github:videosdk-live/skills
 ```
 
 During installation, select the AI coding assistants you want to use.
